@@ -73,7 +73,7 @@ int main(int argc, char const *argv[])
 	//Setting uid to nobody
 	val = setuid((long)pwd->pw_uid);
 	if(val ==-1){
-	printf("Error to drop privileges\n");
+	printf("Error dropping privileges\n");
 	return 0;
 	}
     valread = read(new_socket, buffer, 1024);
